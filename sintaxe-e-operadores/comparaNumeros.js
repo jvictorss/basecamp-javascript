@@ -1,4 +1,7 @@
 function comparaNumeros(num1, num2) {
+	if (num1 <= 0 || num2 <= 0) {
+		return "Insira números > 0";
+	}
 	const primeiraFrase = criaPrimeiraFrase(num1, num2);
 	const segundaFrase = criaSegundaFrase(num1, num2);
 
@@ -36,4 +39,4 @@ function criaSegundaFrase(num1, num2) {
 	return `Sua soma é ${soma}, que é ${comparaDez} 10 e ${comparaVinte} 20.`;
 }
 
-console.log(comparaNumeros(8, 5));
+console.log(comparaNumeros(0.5, 1));
