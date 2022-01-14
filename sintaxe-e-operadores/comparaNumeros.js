@@ -22,14 +22,18 @@ function criaSegundaFrase(num1, num2) {
 	let comparaVinte = 'menor';
 
 	if (soma > 10) {
-		comparaDez = 'maior';
+		comparaDez = 'maior que';
+	} else if (soma == 10) {
+		comparaDez = 'igual a';
 	}
 
 	if (soma > 20) {
-		comparaVinte = 'maior';
+		comparaVinte = 'maior que';
+	} else if (soma == 20) {
+		comparaVinte = 'igual a';
 	}
 
-	return `Sua soma é ${soma}, que é ${comparaDez} do que 10 e ${comparaVinte} do que 20.`;
+	return `Sua soma é ${soma}, que é ${comparaDez} 10 e ${comparaVinte} 20.`;
 }
 
-console.log(comparaNumeros(10, 10));
+console.log(comparaNumeros(8, 5));
